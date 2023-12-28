@@ -3,9 +3,8 @@
   Використовуйте generics, щоб цей інтерфейс міг працювати з будь-якими типами ключів та значень.
 */
 
-interface KeyValuePair {
-  key;
-  value;
+class KeyValuePair<T, K> {
+  constructor(public key: T, value: K) {}
 }
 
 export {};
